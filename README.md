@@ -19,7 +19,7 @@ Note: (first make backup of graph folder before doing so or please do not re-gen
 sudo go generate graphql/graph/graph.go
 ```
 
-##update go mod
+## update go mod
 ```
 go mod tidy
 ```
