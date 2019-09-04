@@ -17,7 +17,7 @@ services:
     depends_on:
       - "catalog_db"
     environment:
-      DATABASE_URL: "catalog_db:9200"
+      DATABASE_URL: "http://catalog_db:9200"
 
   order:
     build:

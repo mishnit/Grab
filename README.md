@@ -24,7 +24,7 @@ $ sudo go generate graphql/graph/graph.go
 $ go mod tidy
 ```
 
-## Enable GO111MODULE="on" if not
+## Enable GO111MODULE="on" if required
 ```
 $ export GO111MODULE="on"
 ```
