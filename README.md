@@ -26,7 +26,7 @@ $ go mod tidy
 
 ## Enable GO111MODULE="on" if required
 ```
-$ export GO111MODULE="on"
+$ export GO111MODULE=on
 ```
 
 ## Build
