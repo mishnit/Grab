@@ -37,3 +37,15 @@ Try sending Post request for query and mutation to <http://localhost:8000/graphq
 
 ## Issue with accesing URL?
 Try changing graphql ports in docker-compose from "8000:8080" to "8000"
+
+## Accesing postgres from docker container
+
+```
+$ docker ps (copy container id where postgres is running)
+$ docker exec -it <postgres-container-id-05b3a3471f6f> bash
+$root@05b3a3471f6f:/# psql -U <databasename-grab>
+$ \dt (look for schema name and table name)
+$ SELECT * FROM <schema-name>.<table-name>; (Example: SELECT * FROM public.orders;)
+$ \q
+$ exit
+```
