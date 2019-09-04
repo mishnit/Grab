@@ -8,20 +8,25 @@ The underlying source code for the article [Using GraphQL API Gateway for Micros
 
 ## create pb files
 ```
-go generate catalog/server.go
-go generate account/server.go
-go generate order/server.go
+$ go generate catalog/server.go
+$ go generate account/server.go
+$ go generate order/server.go
 ```
 
 ## create gqlgen generated file [DO NOT DO THIS]
 Note: (first make backup of graph folder before doing so or please do not re-generate this again as this will remove all the modifications made to the resolvers inside this folder, you will be bombartded with errors)
 ```
-sudo go generate graphql/graph/graph.go
+$ sudo go generate graphql/graph/graph.go
 ```
 
 ## update go mod
 ```
-go mod tidy
+$ go mod tidy
+```
+
+## Enable GO111MODULE="on" if not
+```
+$ export GO111MODULE="on"
 ```
 
 ## Build
