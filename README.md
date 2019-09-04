@@ -19,21 +19,21 @@ Note: (first make backup of graph folder before doing so or please do not re-gen
 $ sudo go generate graphql/graph/graph.go
 ```
 
-## update go mod
+## update go.mod and go.sum files
 ```
 $ go mod tidy
-```
-
-## Enable GO111MODULE="on" if required
-```
-$ export GO111MODULE=on
 ```
 
 ## Build
 install all the dependencies from go.mod into vendor folder
 ```
 $ go mod vendor
-$ sudo docker-compose up -d --build
+$ docker-compose up -d --build
 ```
 
 Open <http://localhost:8000/playground> in your browser.
+                            or
+Try sending Post request for query and mutation to <http://localhost:8000/graphql> in postman.
+
+## Issue with accesing URL?
+Try changing graphql ports in docker-compose from "8000:8080" to "8000"
