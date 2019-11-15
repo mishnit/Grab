@@ -2,8 +2,6 @@
 
 Grab: Online store based on Go microservices, GRPC, protobuf, postgresql, elastic search and GraphQL.
 
-The underlying source code for the article [Using GraphQL API Gateway for Microservices in Go](https://outcrawl.com/go-graphql-gateway-microservices).
-
 ## create pb files
 ```
 $ go generate catalog/server.go
